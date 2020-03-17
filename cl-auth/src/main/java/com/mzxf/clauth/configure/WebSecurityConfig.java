@@ -20,15 +20,18 @@ import org.springframework.security.crypto.password.PasswordEncoder;
 public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
     @Override
     @Bean
-    public UserDetailsService userDetailsService(){
+    public UserDetailsService userDetailsService() {
         return new UserDetailServiceImpl();
     }
+
     @Bean
-    public PasswordEncoder passwordEncoder(){
+    public PasswordEncoder passwordEncoder() {
         return new BCryptPasswordEncoder();
     }
+
     /**
      * 认证管理
+     *
      * @return 认证管理对象
      * @throws Exception 认证异常信息
      */
@@ -47,6 +50,7 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
 
     /**
      * http安全配置
+     *
      * @param http http安全对象
      * @throws Exception http安全异常信息
      */

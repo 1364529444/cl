@@ -16,7 +16,7 @@
 
 
     <dependencies>
-        <!--security+oauth-->
+        <!--security-->
         <dependency>
             <groupId>org.springframework.cloud</groupId>
             <artifactId>spring-cloud-starter-security</artifactId>

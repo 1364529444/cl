@@ -15,6 +15,7 @@ public class UserServiceDetail implements UserDetailsService {
     private PasswordEncoder passwordEncoder;
     @Override
     public UserDetails loadUserByUsername(String s) throws UsernameNotFoundException {
+        System.out.println(s);
         return new User("zy", passwordEncoder.encode("123456"), AuthorityUtils.createAuthorityList("admin"));
     }
 }

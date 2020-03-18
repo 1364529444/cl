@@ -1,3 +1,4 @@
+/*
 package com.mzxf.clzuul.filterConfigure;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -50,3 +51,4 @@ public class ResourceServerConfig extends ResourceServerConfigurerAdapter {
     }
 
 }
+*/

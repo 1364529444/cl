@@ -1,7 +1,10 @@
 package com.mzxf.clzuul.filterConfigure;
 
 import com.netflix.zuul.ZuulFilter;
+import com.netflix.zuul.context.RequestContext;
 import com.netflix.zuul.exception.ZuulException;
+
+import javax.servlet.http.HttpServletRequest;
 
 import static org.springframework.cloud.netflix.zuul.filters.support.FilterConstants.PRE_TYPE;
 

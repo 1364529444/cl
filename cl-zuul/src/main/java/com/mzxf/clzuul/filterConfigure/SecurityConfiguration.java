@@ -1,3 +1,4 @@
+/*
 package com.mzxf.clzuul.filterConfigure;
 
 
@@ -15,13 +16,15 @@ import org.springframework.security.crypto.password.PasswordEncoder;
 
 import javax.servlet.http.HttpServletResponse;
 
+*/
 /**
  * @Classname SecurityConfiguration
  * @Description TODO
  * @Author 李号东 lihaodongmail@163.com
  * @Date 2019-03-18 22:29
  * @Version 1.0
- */
+ *//*
+
 @Configuration
 @EnableWebSecurity
 public class SecurityConfiguration extends WebSecurityConfigurerAdapter {
@@ -38,17 +41,21 @@ public class SecurityConfiguration extends WebSecurityConfigurerAdapter {
 
     }
 
-    /**
+    */
+/**
      * password 支持多种编码，通过密码的前缀区分编码方式,推荐
-     */
+     *//*
+
     @Bean
     PasswordEncoder passwordEncoder() {
         return PasswordEncoderFactories.createDelegatingPasswordEncoder();
     }
 
-    /**
+    */
+/**
      * 这一步的配置是必不可少的，否则SpringBoot会自动配置一个AuthenticationManager,覆盖掉内存中的用户
-     */
+     *//*
+
     @Bean
     @Override
     public AuthenticationManager authenticationManagerBean() throws Exception {
@@ -61,4 +68,4 @@ public class SecurityConfiguration extends WebSecurityConfigurerAdapter {
         //设置UserDetailsService以及密码规则
         auth.userDetailsService(userServiceDetail).passwordEncoder(passwordEncoder());
     }
-}
+}*/

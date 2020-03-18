@@ -1,3 +1,4 @@
+/*
 package com.mzxf.clzuul.filterConfigure;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -18,3 +19,4 @@ public class UserServiceDetail implements UserDetailsService {
         return new User("zy", passwordEncoder.encode("123456"), AuthorityUtils.createAuthorityList("admin"));
     }
 }
+*/
